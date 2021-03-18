@@ -6,10 +6,10 @@ _get_repolink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $UPSTREAM_REPO == "new" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL2ltc2FyYXZhbmFrcmlzaC90YW1pbC9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d 
+        echo "aHR0cHM6Ly9naXRodWIuY29tL2ltc2FyYXZhbmFrcmlzaC9UYW1pbEJvdC9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d 
     elif [[ $UPSTREAM_REPO == "old" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL2ppc2FuMDkvY2F0dXNlcmJvdC9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL2l2ZXRyaS9UYW1pbEJvdC9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
     elif [[ $UPSTREAM_REPO =~ $regex ]]
     then
         if [[ $UPSTREAM_REPO_BRANCH ]]
@@ -19,7 +19,7 @@ _get_repolink () {
             echo "${UPSTREAM_REPO}/archive/master.zip"
         fi
     else
-        echo "aHR0cHM6Ly9naXRodWIuY29tL2ltc2FyYXZhbmFrcmlzaC90YW1pbC9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL2ltc2FyYXZhbmFrcmlzaC9UYW1pbEJvdC9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
     fi
 }
 
