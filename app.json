@@ -1,7 +1,7 @@
 {
   "name": "Tamilbot",
   "description": "A simple Telegram userbot based on Telethon . Maintained by saravanakrish ",
-  "logo": "https://telegra.ph/file/3d60313110c58684b31ea.jpg",
+  "logo": "https://telegra.ph/file/cb72a96f40d9026e3341d.jpg",
   "keywords": [
     "plugin",
     "modular",
@@ -55,14 +55,24 @@
       "value": "",
       "required": false
     },
+    "PRIVATE_GROUP_BOT_API_ID": {
+      "description": "its for pm permit create group get group id . id must start with -100",
+      "value": "",
+      "required": false
+    },
+    "PRIVATE_CHANNEL_BOT_API_ID": {
+      "description": "Same as abouve ",
+      "value": "",
+      "required": false
+    },
     "TZ": {
       "description": "Required for Correct Time on autopic/get time. Know your timezone from http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
       "value": "Asia/Kolkata",
       "required": false
     },
     "UPSTREAM_REPO": {
-      "description": "if you need custom deploy then type your git repo link",
-      "value": "master",
+      "description": "if you need custom deploy then type your git repo link. ie old or new",
+      "value": "old",
       "required": false
     }
   },
