@@ -37,7 +37,7 @@ _set_bot () {
     rm -rf "$zippath"
     sleep 5
     cd $TAMILPATH
-    echo "    Starting Tamil    "
+    echo "    Starting TamilBot    "
    
     python3 ../setup/updater.py ../requirements.txt requirements.txt
     python3 -m userbot
